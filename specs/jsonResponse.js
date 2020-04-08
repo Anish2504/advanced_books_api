@@ -1,4 +1,4 @@
-const jsonRespone = (response) => {
+const jsonResponse = (response) => {
     return JSON.stringify(response.body)
 }
 
