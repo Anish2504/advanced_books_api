@@ -1,4 +1,4 @@
-const models = require('../database/models')
+const models = require('../models')
 
 const booksController = {
     async index(req, res, next) {
