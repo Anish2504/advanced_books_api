@@ -13,7 +13,8 @@ module.exports = {
     "database": "books_test",
     "host": "127.0.0.1",
     "dialect": "postgres",
-    "operatorsAliases": false
+    "operatorsAliases": false,
+    "logging": false
   },
   "production": {
     "username": "root",
