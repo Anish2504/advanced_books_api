@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "start:dev": "nodemon ./bin/www",
-    "test": "NODE_ENV=test mocha --recursive --exit specs"
+    "test": "NODE_ENV=test NODE_NO_WARNINGS=1 mocha"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -20,5 +20,12 @@
     "mocha": "^7.1.1",
     "nodemon": "^2.0.2",
     "supertest": "^4.0.2"
+  },
+  "mocha": {
+    "package": "./package.json",
+    "reporter": "spec",
+    "exit": true,
+    "recursive": true,
+    "full-trace": false
   }
 }
